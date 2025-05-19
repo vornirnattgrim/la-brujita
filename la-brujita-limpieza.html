@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa de limpieza profesional en Valencia. Servicios de limpieza para viviendas, oficinas, comunidades y más.">
+<meta name="keywords" content="limpieza, Valencia, empresas de limpieza, oficinas, viviendas, comunidades">
+<meta name="author" content="La Brujita Limpiezas PJR SL">
+    <title>La Brujita - Servicios de Limpieza Profesional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar container">
+            <a href="#" class="logo">
+    <img src="images/logo.png" alt="Logo de La Brujita - Empresa de limpieza profesional" style="height: 100px;">
+</a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#quotation">Cotización</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content container">
+            <h1>Servicios de Limpieza Profesional</h1>
+            <p>En La Brujita nos encargamos de mantener impecable tu espacio, para que tú solo te preocupes por disfrutarlo.</p>
+            <a href="#quotation" class="btn btn-primary">Solicitar Cotización</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+            </div>
+            <div class="service-categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="residential">Residencial</button>
+                <button class="category-btn" data-category="commercial">Comercial</button>
+                <button class="category-btn" data-category="specialized">Especializado</button>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-category="residential">
+                    <div class="service-img" style="background-image: url('images/vivienda.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Limpieza de Viviendas</h3>
+                        <p>Servicio completo de limpieza para hogares, apartamentos y chalets, manteniendo tu espacio impecable y acogedor.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Limpieza de Hoteles">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="commercial">
+                    <div class="service-img" style="background-image: url('images/oficina.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Limpieza de Oficinas</h3>
+                        <p>Mantenemos tu entorno de trabajo limpio y organizado para aumentar la productividad y dar buena imagen a tus clientes.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Limpieza de Oficinas">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="residential commercial">
+                    <div class="service-img" style="background-image: url('images/comunidades.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Limpieza de Comunidades</h3>
+                        <p>Servicio especializado para escaleras, portales y zonas comunes de edificios y urbanizaciones.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Limpieza de Comunidades">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="commercial">
+                    <div class="service-img" style="background-image: url('images/hotel.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Limpieza de Hoteles</h3>
+                        <p>Servicios de limpieza integral para habitaciones, áreas comunes y zonas de restauración en establecimientos hoteleros.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Limpieza de Hoteles">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="commercial">
+                    <div class="service-img" style="background-image: url('images/arbnb.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Limpieza de Airbnbs</h3>
+                        <p>Servicio especializado y rápido para viviendas de alquiler vacacional, asegurando la mejor impresión en tus huéspedes.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Limpieza de Airbnbs">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="specialized">
+                    <div class="service-img" style="background-image: url('images/cristales.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Limpieza de Cristales</h3>
+                        <p>Limpieza profesional de cristales y ventanas en altura para dejar tus vidrios transparentes y sin marcas.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Limpieza de Cristales">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="specialized">
+                    <div class="service-img" style="background-image: url('images/obra.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Limpieza de Fin de Obra</h3>
+                        <p>Eliminamos todos los residuos y polvo tras una obra para que puedas disfrutar de tu espacio renovado inmediatamente.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Limpieza de Fin de Obra">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="specialized">
+                    <div class="service-img" style="background-image: url('images/desinfeccion.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Desinfección y Sanitización</h3>
+                        <p>Servicio especializado de desinfección con productos homologados, eliminando gérmenes y bacterias de tus espacios.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Desinfección y Sanitización">Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="specialized">
+                    <div class="service-img" style="background-image: url('images/tapiceria.jpg')"></div>
+                    <div class="service-content">
+                        <h3>Limpieza de Tapicerías</h3>
+                        <p>Restauramos la apariencia de tus sofás, sillas, colchones y tapicerías con métodos profesionales y eficaces.</p>
+                        <a href="#quotation" class="btn btn-primary" data-service="Limpieza de Tapicerías">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotation Section -->
+    <section class="section quotation" id="quotation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Solicitar Cotización</h2>
+            </div>
+            <div class="quotation-form">
+                <form id="quotationForm" action="https://formspree.io/f/xvgalboy" method="POST">
+
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre completo</label>
+                        <input type="text" id="name" name="Nombre" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="email" name="Email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" id="phone" name="Teléfono" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service" class="form-label">Tipo de servicio</label>
+                        <select id="service" name="Servicio" class="form-select" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="Viviendas">Limpieza de Viviendas</option>
+                            <option value="Oficinas">Limpieza de Oficinas</option>
+                            <option value="Comunidades">Limpieza de Comunidades</option>
+                            <option value="Hoteles">Limpieza de Hoteles</option>
+                            <option value="Airbnbs">Limpieza de Airbnbs</option>
+                            <option value="Cristales">Limpieza de Cristales</option>
+                            <option value="Fin de Obra">Limpieza de Fin de Obra</option>
+                            <option value="Desinfección">Desinfección y Sanitización</option>
+                            <option value="Tapicerías">Limpieza de Tapicerías</option>
+                            <option value="Otro">Otro (especificar)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Detalles adicionales</label>
+                        <textarea id="message" name="Mensaje" class="form-textarea" placeholder="Describa el espacio, frecuencia deseada, y cualquier detalle importante para la cotización."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+<p id="form-status" style="margin-top:1rem;"></p>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img"></div>
+                <div class="about-text">
+                    <h2>Sobre La Brujita Limpiezas PJR SL</h2>
+                    <p>Con más de 18 años de experiencia en el sector, La Brujita Limpiezas PJR SL se ha consolidado como una empresa de referencia en servicios de limpieza profesional en toda Valencia.</p>
+                    <p>Nuestro equipo está formado por profesionales altamente cualificados y utilizamos productos de primera calidad, respetuosos con el medio ambiente y efectivos para cada tipo de superficie.</p>
+                    <p>En La Brujita Limpiezas PJR SL, entendemos que cada cliente tiene necesidades diferentes, por eso ofrecemos servicios personalizados adaptados a tus requerimientos y presupuesto.</p>
+                    <p>Nuestros valores son la puntualidad, eficiencia, profesionalidad y atención al detalle en cada servicio que realizamos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Opiniones de Clientes</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "Contratamos a La Brujita para la limpieza semanal de nuestra oficina y estamos encantados. Son profesionales, puntuales y dejan todo impecable. Lo recomendaría sin duda."
+                    </div>
+                    <div class="testimonial-author">
+                        — Carlos Martínez, Director de Marketing
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                         "Estoy muy contenta con el servicio. Siempre puntuales, muy detallistas y atentos. Mi casa no ha estado tan limpia en años."
+                    </div>
+                     <div class="testimonial-author">
+                         — Laura Pérez, Cliente residencial
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "Los contratamos para una limpieza de fin de obra y superaron nuestras expectativas. 100% recomendables."
+                    </div>
+                    <div class="testimonial-author">
+                        — Javier Gómez, Arquitecto
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Dirección</h4>
+                            <p>La Brujita LIMPIEZAS PJR, S.L. Av. Plata, 59, 5º, Esc. A 46006 Valencia, España</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Teléfono</h4>
+                            <p>+34 653 198 999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@labrujita.es</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Horario</h4>
+                            <p>Lunes - Viernes: 8:00 - 20:00<br>Sábados: 9:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <!-- Placeholder for map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.771586858016!2d-0.36543879999996176!3d39.456045800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048c56729e415%3A0x5f653736b9cd87c2!2sAv.%20de%20la%20Plata%2C%2059%2C%20Quatre%20Carreres%2C%2046006%20Val%C3%A8ncia%2C%20Espa%C3%B1a!5e1!3m2!1ses-419!2sec!4v1747677936719!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                                        <div class="footer-logo">
+                        <img src="images/logo.png" alt="La Brujita Logo" style="height: 60px;">
+                    </div>
+                    <p>Expertos en limpieza residencial, comercial y especializada en toda Valencia.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#quotation">Cotización</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📍 La Brujita LIMPIEZAS PJR, S.L. Av. Plata, 59, 5º, Esc. A 46006 Valencia, España</li>
+                        <li>📞 +34 653 198 999</li>
+                        <li>✉️ info@labrujita.es</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 La Brujita Limpiezas PJR S.L. - Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/+34653198999" target="_blank" class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- Botón scroll-top -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Script: Filtro de servicios por categoría -->
+
+</body>
+</html>
